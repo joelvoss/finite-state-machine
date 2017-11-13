@@ -27,7 +27,7 @@ class FiniteMachine extends React.Component {
    * @param {Object} newData - Data to pass along with the transition.
    */
   transition = (actionType, newData) => {
-    const { log, chart, reducer } = this.props;
+    const { log, reducer } = this.props;
     const { data, machineState } = this.state;
 
     const nextState = this.machine
